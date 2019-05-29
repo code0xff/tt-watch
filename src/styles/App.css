@@ -1,0 +1,8 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('http://www.barraques.cat/imgdirs/big/83/837123_black-cat-wallpaper-hd.jpg');
+  opacity: 0.7;
+}
