@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tt-watch/static/css/main.98d586f1.chunk.css",
+    "main.css": "/tt-watch/static/css/main.fe4e252d.chunk.css",
     "main.js": "/tt-watch/static/js/main.85db1082.chunk.js",
     "main.js.map": "/tt-watch/static/js/main.85db1082.chunk.js.map",
     "runtime~main.js": "/tt-watch/static/js/runtime~main.f983abb2.js",
@@ -8,8 +8,8 @@
     "static/js/2.fde99a95.chunk.js": "/tt-watch/static/js/2.fde99a95.chunk.js",
     "static/js/2.fde99a95.chunk.js.map": "/tt-watch/static/js/2.fde99a95.chunk.js.map",
     "index.html": "/tt-watch/index.html",
-    "precache-manifest.3060ae3790821f63febcf3dc89e6b9da.js": "/tt-watch/precache-manifest.3060ae3790821f63febcf3dc89e6b9da.js",
+    "precache-manifest.7935fb82d74bbcb5cdf941f34a71c6f9.js": "/tt-watch/precache-manifest.7935fb82d74bbcb5cdf941f34a71c6f9.js",
     "service-worker.js": "/tt-watch/service-worker.js",
-    "static/css/main.98d586f1.chunk.css.map": "/tt-watch/static/css/main.98d586f1.chunk.css.map"
+    "static/css/main.fe4e252d.chunk.css.map": "/tt-watch/static/css/main.fe4e252d.chunk.css.map"
   }
 }
