@@ -4,11 +4,21 @@ import '../styles/Menu.css';
 export default function Menu ({setTTAMPM, setTTHour, setTTMinute, countTTTime, finishTTTime, isTTTimeOn}) {
   return (
     <div className='menu'>
-      <select className='menu__select' onChange={setTTAMPM}>
+      <select 
+      className={isTTTimeOn ? 'menu__select__active' : 'menu__select'} 
+      onChange={setTTAMPM} 
+      defaultValue='PM'
+      disabled={isTTTimeOn}
+    >
         <option value='AM'>AM</option>
         <option value='PM'>PM</option>
       </select>
-      <select className='menu__select' onChange={setTTHour}>
+      <select 
+        className={isTTTimeOn ? 'menu__select__active' : 'menu__select'} 
+        onChange={setTTHour} 
+        defaultValue='06'
+        disabled={isTTTimeOn}
+      >
         <option value='01'>01</option>
         <option value='02'>02</option>
         <option value='03'>03</option>
@@ -22,7 +32,12 @@ export default function Menu ({setTTAMPM, setTTHour, setTTMinute, countTTTime, f
         <option value='11'>11</option>
         <option value='12'>12</option>
       </select>
-      <select className='menu__select' onChange={setTTMinute}>
+      <select 
+        className={isTTTimeOn ? 'menu__select__active' : 'menu__select'} 
+        onChange={setTTMinute} 
+        defaultValue='00'
+        disabled={isTTTimeOn}
+      >
         <option value='00'>00</option>
         <option value='10'>10</option>
         <option value='20'>20</option>
@@ -32,10 +47,12 @@ export default function Menu ({setTTAMPM, setTTHour, setTTMinute, countTTTime, f
       </select>
       <button 
         className={isTTTimeOn ? 'menu__button__active' : 'menu__button'} 
-        onClick={countTTTime}>
+        onClick={countTTTime}
+        disabled={isTTTimeOn}
+      >
           ㅌㅌ 시작
       </button>
-      <button className='menu__button' onClick={finishTTTime}>ㅌㅌ 종료</button>
+      <button className='menu__button' onClick={finishTTTime} disabled={!isTTTimeOn}>ㅌㅌ 종료</button>
     </div>
   )
 }

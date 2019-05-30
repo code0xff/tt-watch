@@ -5,7 +5,7 @@ import Menu from './routes/Menu'
 import StringJoiner from './utils/StringJoiner'
 
 export default class App extends Component {
-  state={timeIntervalId: null, time: null, isTTTimeOn: false, ampm: 'AM', hour: '01', minute: '00'}
+  state={timeIntervalId: null, time: null, isTTTimeOn: false, ampm: 'PM', hour: '06', minute: '00'}
 
   componentDidMount () {
     const timeIntervalId = setInterval(this._setTime, 1000)
@@ -49,8 +49,7 @@ export default class App extends Component {
   }
 
   _countTTTime = () => {
-    const {timeIntervalId, ampm, hour, minute, isTTTimeOn} = this.state
-    if (isTTTimeOn) return
+    const {timeIntervalId, ampm, hour, minute} = this.state
     clearInterval(timeIntervalId)
 
     const ttTime = new Date()
@@ -63,8 +62,7 @@ export default class App extends Component {
   }
 
   _finishTTTime = () => {
-    const {timeIntervalId, isTTTimeOn} = this.state
-    if (!isTTTimeOn) return
+    const {timeIntervalId} = this.state
     clearInterval(timeIntervalId)
 
     const newTimeIntervalId = setInterval(this._setTime, 1000)
