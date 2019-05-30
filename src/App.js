@@ -73,7 +73,7 @@ export default class App extends Component {
 
   _setTTTime = (ttTime) => {
     const remainingTime = ttTime.getTime() - new Date().getTime();
-    this.setState({time: 'ㅌㅌ까지 ' + (remainingTime >= 0 ? remainingTime : 0) + '초 남았습니다.'})
+    this.setState({time: 'ㅌㅌ까지 ' + (remainingTime >= 0 ? remainingTime : 0) + 'ms 남았습니다.'})
   }
 
   render () {
