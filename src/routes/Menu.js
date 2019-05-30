@@ -16,7 +16,6 @@ export default function Menu ({setTTAMPM, setTTHour, setTTMinute, countTTTime, f
         <option value='05'>05</option>
         <option value='06'>06</option>
         <option value='07'>07</option>
-        <option value='07'>07</option>
         <option value='08'>08</option>
         <option value='09'>09</option>
         <option value='10'>10</option>
