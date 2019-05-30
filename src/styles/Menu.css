@@ -51,6 +51,10 @@
   outline: none;
 }
 
+.menu__select:hover {
+  cursor: pointer;
+}
+
 .menu__select option {
   background-color: #a4a4a4;
   color: #fff;
