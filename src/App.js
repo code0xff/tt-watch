@@ -20,16 +20,24 @@ export default class App extends Component {
   _getTime = () =>  {
     const date = new Date()
 
-    const hour = this._createFullTimeText(date.getHours())
+    const hour = date.getHours()
     const minute = this._createFullTimeText(date.getMinutes())
     const second = this._createFullTimeText(date.getSeconds())
 
     return new StringJoiner(' ')
-      .append((hour > 12 ? hour - 12 : hour) + '시')
+      .append(this._calculateHour(hour) + '시')
       .append(minute + '분')
       .append(second + '초')
-      .append(hour > 12 ? 'PM': 'AM')
+      .append(hour >= 12 ? 'PM': 'AM')
       .toString()
+  }
+
+  _calculateHour = (hour) => {
+    if (hour === 0) {
+      return 12
+    } else if (hour > 12) {
+      return this._createFullTimeText(hour - 12)
+    }
   }
 
   _createFullTimeText = (timeValue) => {
