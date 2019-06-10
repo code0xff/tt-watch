@@ -62,7 +62,13 @@ export default class App extends Component {
     clearInterval(timeIntervalId)
 
     const ttTime = new Date()
-    ttTime.setHours(ampm === 'PM' ? parseInt(hour) + 12 : hour)
+    
+    let calculatedHour = parseInt(hour);
+    if ((ampm === 'PM' && calculatedHour !== 12) || (ampm === 'AM' && calculatedHour === 12)) {
+      calculatedHour = calculatedHour + 12;
+    }
+
+    ttTime.setHours(calculatedHour)
     ttTime.setMinutes(minute)
     ttTime.setSeconds(0)
     
