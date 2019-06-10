@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5cd6d2df1dac02ddac73587d1022cec4",
+    "revision": "da6f45adb8e466ab67bd508dcc615513",
     "url": "/tt-watch/index.html"
   },
   {
-    "revision": "56f61687544c809a788d",
+    "revision": "a6605d3c9bae8fd3163c",
     "url": "/tt-watch/static/css/main.a78188b2.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tt-watch/static/js/2.fde99a95.chunk.js"
   },
   {
-    "revision": "56f61687544c809a788d",
-    "url": "/tt-watch/static/js/main.90c2cec4.chunk.js"
+    "revision": "a6605d3c9bae8fd3163c",
+    "url": "/tt-watch/static/js/main.5bc95185.chunk.js"
   },
   {
     "revision": "e29af76d20452884ecca",
